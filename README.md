@@ -36,9 +36,7 @@ cd Food_Loop
 npm install
 npm run dev
 ```
-How users can get started with the project?
 
-Where users can get help with your project?
 ## Getting help
 
 - Open an [issue](../../issues) for bugs or feature requests
