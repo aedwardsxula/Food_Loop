@@ -29,9 +29,20 @@ private val DarkColorScheme = darkColorScheme(
 )
 
 private val LightColorScheme = lightColorScheme(
-    primary = Purple40,
-    secondary = PurpleGrey40,
-    tertiary = Pink40
+    primary = Terracotta,
+    secondary = WarmCoral,
+    tertiary = SoftOrange,
+
+    background = WarmCream,
+    surface = Color.White,
+
+    onPrimary = Color.White,
+    onSecondary = DarkBrown,
+    onTertiary = DarkBrown,
+
+    onBackground = DarkBrown,
+    onSurface = DarkBrown
+
 
     /* Other default colors to override
     background = Color(0xFFFFFBFE),
