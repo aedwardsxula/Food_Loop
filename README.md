@@ -44,11 +44,11 @@ npm run dev
 
 ## Maintainers and contributers
 
-| Who     | Date         | What                        |
-|---------|--------------|-----------------------------|
-| Kyleigh | Nov 10, 2026 | Add personal info to ReadMe |
-| Emilio  | Nov 10, 2026 | Add personal info to ReadMe |
-| Robin   | Nov 12, 2026 | Add personal info to ReadMe |
-
+| Who     | Date         | What                                                 |
+|---------|--------------|------------------------------------------------------|
+| Kyleigh | Nov 10, 2026 | Add personal info to ReadMe                          |
+| Emilio  | Nov 10, 2026 | Add personal info to ReadMe                          |
+| Robin   | Nov 12, 2026 | Add personal info to ReadMe                          |
+| Robin   | Nov 14, 2026 | Set the app theme colors and font in the theme files |
 
 Hope you enjoy!
