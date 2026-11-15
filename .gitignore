@@ -36,3 +36,4 @@ google-services.json
 
 # API key
 .env
+.idea/
