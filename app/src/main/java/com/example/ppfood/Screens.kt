@@ -22,20 +22,25 @@ import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 
 @Composable
-fun HomeScreen(){
- // all placeholder info
+fun HomeScreen(navController: NavHostController){
+ // all placeholder info for now
     val savedMeals = 0
     val mealsMade = 0
 
-    Column (Modifier.padding(8.dp)) {
-        Card(Modifier.fillMaxWidth().padding(8.dp)) {
+    Column(Modifier.padding(8.dp)) {
+        Card(Modifier
+            .fillMaxWidth()
+            .padding(8.dp)) { //home
             Column(Modifier.padding(16.dp)) {
                 Text("Welcome back, {Name}!")
                 Text("Ready to find some cheap food?")
             }
         }
         Row(Modifier.fillMaxWidth().height(200.dp)) {
-            Card(Modifier.fillMaxHeight().padding(8.dp)) {
+            Card(
+                onClick = { navController.navigateToTab(Destination.MY_PLAN.route) },
+                Modifier.fillMaxHeight().padding(8.dp)
+            ) {
                 Column(Modifier.padding(16.dp)) {
                     Text("My Plan")
                     Spacer(Modifier.height(8.dp))
@@ -43,11 +48,16 @@ fun HomeScreen(){
                     Text("Meals made: $mealsMade")
                 }
             }
-            Card(Modifier.fillMaxHeight().padding(8.dp)) {
+            Card(
+                onClick = { navController.navigateToTab(Destination.PLAN_MEALS.route) },
+                Modifier.fillMaxHeight().padding(8.dp)
+            ) {
                 Column(Modifier.padding(16.dp)) {
                     Text("Plan Meals")
                     Spacer(Modifier.height(8.dp))
-                    Box(Modifier.fillMaxWidth().height(80.dp), Alignment.Center) {
+                    Box(Modifier
+                        .fillMaxWidth()
+                        .height(80.dp), Alignment.Center) {
                         Icon(
                             painterResource(R.drawable.food),
                             null,
@@ -59,7 +69,10 @@ fun HomeScreen(){
                 }
             }
         }
-        Card(Modifier.fillMaxWidth().padding(8.dp)) {
+        Card(
+            onClick = { navController.navigateToTab(Destination.RESOURCES.route) },
+            Modifier.fillMaxWidth().padding(8.dp)
+        ) {
             Column(Modifier.padding(16.dp)) {
                 Text("Resources")
                 Text("Supermarket: 2.3 miles away")
@@ -88,7 +101,7 @@ private fun EmptyScreen(title: String) {
 @Composable
 fun AppNavHost(navController: NavHostController, modifier: Modifier = Modifier) {
     NavHost(navController, startDestination = Destination.HOME.route, modifier = modifier) {
-        composable(Destination.HOME.route) { HomeScreen() }
+        composable(Destination.HOME.route) { HomeScreen(navController) }
         composable(Destination.PLAN_MEALS.route) { PlanMealsScreen() }
         composable(Destination.MY_PLAN.route) { MyPlanScreen() }
         composable(Destination.RESOURCES.route) { ResourcesScreen() }

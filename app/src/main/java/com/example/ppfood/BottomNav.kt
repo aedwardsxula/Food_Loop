@@ -33,15 +33,19 @@ fun BottomNavBar(navController: NavHostController) {
             NavigationBarItem(
                 selected = currentRoute == dest.route,
                 onClick = {
-                    navController.navigate(dest.route) {
-                        popUpTo(navController.graph.findStartDestination().id) { saveState = true }
-                        launchSingleTop = true
-                        restoreState = true
-                    }
+                    navController.navigateToTab(dest.route)
                 },
                 icon = { Icon(dest.icon, contentDescription = dest.label) },
                 label = { Text(dest.label) }
             )
         }
+    }
+}
+
+fun NavHostController.navigateToTab(route: String) {
+    navigate(route) {
+        popUpTo(graph.findStartDestination().id) { saveState = true }
+        launchSingleTop = true
+        restoreState = true
     }
 }
