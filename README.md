@@ -33,8 +33,7 @@ Many students have limited kitchen access, limited transportation, and tight bud
 ```bash
 git clone https://github.com/aedwardsxula/Food_Loop.git
 cd Food_Loop
-npm install
-npm run dev
+open -a /Applications/Android\ Studio.app
 ```
 
 ## Getting help
