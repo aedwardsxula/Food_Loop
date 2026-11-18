@@ -43,13 +43,14 @@ open -a /Applications/Android\ Studio.app
 
 ## Maintainers and contributers
 
+<!-- | Kyleigh | Nov 10, 2026 | Add personal info to ReadMe                          | -->
+<!-- | Emilio  | Nov 10, 2026 | Add personal info to ReadMe                          | -->
+<!-- | Robin   | Nov 12, 2026 | Add personal info to ReadMe                          | -->
+
 | Who     | Date         | What                                                 |
 |---------|--------------|------------------------------------------------------|
-| Kyleigh | Nov 10, 2026 | Add personal info to ReadMe                          |
-| Emilio  | Nov 10, 2026 | Add personal info to ReadMe                          |
-| Robin   | Nov 12, 2026 | Add personal info to ReadMe                          |
-| Robin   | Nov 14, 2026 | Set the app theme colors and font in the theme files |
-| Robin   | Nov 17, 2026 | Build the My Plan screen showing the saved meal plan |
+| Robin   | Nov 14, 2026 | #2 Set the app theme colors and font in the theme files |
+| Robin   | Nov 17, 2026 | #8 Build the My Plan screen showing the saved meal plan |
 
 
 Hope you enjoy!
