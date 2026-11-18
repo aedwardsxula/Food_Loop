@@ -22,7 +22,12 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import androidx.compose.material3.ElevatedCard
+import androidx.compose.material3.LinearProgressIndicator
+import androidx.compose.ui.draw.clip
 import java.util.Locale
+
+
 
 data class Meal(
     val id: String,
@@ -102,6 +107,61 @@ private fun MealCard(meal: Meal) {
                     }
                 }
             }
+        }
+    }
+}
+
+@Composable
+private fun BudgetSummaryCard(budget: Double, totalCost: Double) {
+    val remaining = budget - totalCost
+    val isOver = remaining < 0
+    val progress = if (budget > 0) (totalCost / budget).toFloat().coerceIn(0f, 1f) else 0f
+    val accent = if (isOver) MaterialTheme.colorScheme.error else MaterialTheme.colorScheme.primary
+
+    ElevatedCard(
+        modifier = Modifier.fillMaxWidth(),
+        shape = RoundedCornerShape(16.dp),
+        colors = CardDefaults.elevatedCardColors(
+            containerColor = MaterialTheme.colorScheme.surfaceVariant.copy(alpha = 0.5f)
+        )
+    ) {
+        Column(modifier = Modifier.padding(16.dp)) {
+            Row(
+                modifier = Modifier.fillMaxWidth(),
+                horizontalArrangement = Arrangement.SpaceBetween
+            ) {
+                Column {
+                    Text("Total Food Budget", style = MaterialTheme.typography.labelMedium,
+                        color = MaterialTheme.colorScheme.onSurfaceVariant)
+                    Text(String.format(Locale.US, "$%.2f", budget),
+                        style = MaterialTheme.typography.titleLarge, fontWeight = FontWeight.Bold)
+                }
+                Column(horizontalAlignment = Alignment.End) {
+                    Text(if (isOver) "Over Budget" else "Remaining",
+                        style = MaterialTheme.typography.labelMedium,
+                        color = if (isOver) accent else MaterialTheme.colorScheme.onSurfaceVariant)
+                    Text(String.format(Locale.US, "$%.2f", remaining),
+                        style = MaterialTheme.typography.titleLarge,
+                        fontWeight = FontWeight.Bold, color = accent)
+                }
+            }
+
+            Spacer(modifier = Modifier.height(10.dp))
+
+            LinearProgressIndicator(
+                progress = { progress },
+                modifier = Modifier.fillMaxWidth().height(8.dp).clip(RoundedCornerShape(4.dp)),
+                color = accent,
+                trackColor = MaterialTheme.colorScheme.outlineVariant
+            )
+
+            Spacer(modifier = Modifier.height(8.dp))
+
+            Text(
+                text = "Planned: ${String.format(Locale.US, "$%.2f", totalCost)}",
+                style = MaterialTheme.typography.bodySmall,
+                color = MaterialTheme.colorScheme.onSurfaceVariant
+            )
         }
     }
 }
