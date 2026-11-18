@@ -26,13 +26,6 @@ import androidx.compose.material3.ElevatedCard
 import androidx.compose.material3.LinearProgressIndicator
 import androidx.compose.ui.draw.clip
 import java.util.Locale
-import androidx.compose.foundation.layout.Box
-import androidx.compose.foundation.layout.fillMaxSize
-import androidx.compose.foundation.layout.size
-import androidx.compose.material.icons.Icons
-import androidx.compose.material.icons.filled.ShoppingCart
-import androidx.compose.material3.Icon
-import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
@@ -61,6 +54,8 @@ val savedMeals = mutableStateListOf(
     Meal("4", "Oatmeal with Honey & Bananas", 1.80, "Breakfast", 1,
         listOf("Rolled Oats", "Milk", "Bananas", "Honey"))
 )
+
+val mealsMade = mutableStateListOf<Meal>()
 
 @OptIn(ExperimentalLayoutApi::class)
 @Composable
