@@ -23,9 +23,8 @@ import androidx.navigation.compose.composable
 
 @Composable
 fun HomeScreen(navController: NavHostController){
- // all placeholder info for now
-    val savedMeals = 0
-    val mealsMade = 0
+    val savedCount = savedMeals.size
+    val madeCount = mealsMade.size
 
     Column(Modifier.padding(8.dp)) {
         Card(Modifier
@@ -44,8 +43,8 @@ fun HomeScreen(navController: NavHostController){
                 Column(Modifier.padding(16.dp)) {
                     Text("My Plan")
                     Spacer(Modifier.height(8.dp))
-                    Text("Saved meals: $savedMeals")
-                    Text("Meals made: $mealsMade")
+                    Text("Saved meals: $savedCount")
+                    Text("Meals made: $madeCount")
                 }
             }
             Card(
@@ -84,9 +83,6 @@ fun HomeScreen(navController: NavHostController){
 
 @Composable
 fun PlanMealsScreen() = EmptyScreen("Plan meals")
-
-@Composable
-fun MyPlanScreen() = EmptyScreen("My Plan")
 
 @Composable
 fun ResourcesScreen() = EmptyScreen("Resources")
