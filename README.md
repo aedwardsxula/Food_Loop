@@ -34,6 +34,8 @@ Many students have limited kitchen access, limited transportation, and tight bud
 git clone https://github.com/aedwardsxula/Food_Loop.git
 cd Food_Loop
 open -a /Applications/Android\ Studio.app
+WHAT IF THE USER HAS NO "/Applications/Android\ Studio.app"?
+THEN, WHAT DOES THE USER DO TO RUN YOUR APP?
 ```
 
 ## Getting help
