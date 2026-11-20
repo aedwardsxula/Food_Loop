@@ -28,6 +28,8 @@ Many students have limited kitchen access, limited transportation, and tight bud
 
 **Use it:** open the [live site](https://bayou-basket-scout.lovable.app/). No install needed.
 
+We're using [this API](https://prices.openfoodfacts.org/api/docs#/).
+
 **Run it locally:**
 
 ```bash
