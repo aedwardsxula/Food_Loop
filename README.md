@@ -49,13 +49,13 @@ THEN, WHAT DOES THE USER DO TO RUN YOUR APP?
 <!-- | Emilio  | Nov 10, 2026 | Add personal info to ReadMe                          | -->
 <!-- | Robin   | Nov 12, 2026 | Add personal info to ReadMe                          | -->
 
-| Who     | Date         | What                                                         |
-|---------|--------------|--------------------------------------------------------------|
-| Robin   | Nov 14, 2026 | #2 Set the app theme colors and font in the theme files      |
-| Robin   | Nov 17, 2026 | #8 Build the My Plan screen showing the saved meal plan      |
-| Kyleigh | Nov 14, 2026 | #5 Build the Home screen layout with the four feature cards  |
-| kyleigh | Nov 16, 2026 | #6 Make each Home card open its matching screen              |
-|         |              |                                                              |
+| Who     | Date         | What                                                                              |
+|---------|--------------|-----------------------------------------------------------------------------------|
+| Robin   | Nov 14, 2026 | #2 Set the app theme colors and font in the theme files                           |
+| Robin   | Nov 17, 2026 | #8 Build the My Plan screen showing the saved meal plan                           |
+| Kyleigh | Nov 14, 2026 | #5 Build the Home screen layout with the four feature cards                       |
+| Kyleigh | Nov 16, 2026 | #6 Make each Home card open its matching screen                                   |
+| Kyleigh | Nov 20, 2026 | #11 Write the API service interface with the prices endpoint and query parameters |
 
 
 
