@@ -23,6 +23,7 @@ class MainActivity : ComponentActivity() {
                     bottomBar = { BottomNavBar(navController) }
                 ) { innerPadding ->
                     AppNavHost(navController, Modifier.padding(innerPadding))
+                    testProductSearch()
                 }
             }
         }
