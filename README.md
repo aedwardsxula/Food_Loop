@@ -59,6 +59,7 @@ THEN, WHAT DOES THE USER DO TO RUN YOUR APP?
 | kyleigh | Nov 16, 2026 | #6 Make each Home card open its matching screen             |
 | Emilio  | Nov 14, 2026 | #3 Create an empty screen and wire Nav                      |
 | Emilio  | Nov 14, 2026 | #4 Create the bottom navigation bar                      |
+| Robin   | Nov 20, 2026 | #15 Create the data class for Store (name, address, state) |
 
 
 
