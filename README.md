@@ -28,6 +28,8 @@ Many students have limited kitchen access, limited transportation, and tight bud
 
 **Use it:** open the [live site](https://bayou-basket-scout.lovable.app/). No install needed.
 
+We're using [this API](https://prices.openfoodfacts.org/api/docs#/).
+
 **Run it locally:**
 
 Run it locally
@@ -49,11 +51,20 @@ If you'd rather clone from the terminal, run git clone https://github.com/aedwar
 
 ## Maintainers and contributers
 
-| Who     | Date         | What                                                 |
-|---------|--------------|------------------------------------------------------|
-| Kyleigh | Nov 10, 2026 | Add personal info to ReadMe                          |
-| Emilio  | Nov 10, 2026 | Add personal info to ReadMe                          |
-| Robin   | Nov 12, 2026 | Add personal info to ReadMe                          |
-| Robin   | Nov 14, 2026 | Set the app theme colors and font in the theme files |
+<!-- | Kyleigh | Nov 10, 2026 | Add personal info to ReadMe                          | -->
+<!-- | Emilio  | Nov 10, 2026 | Add personal info to ReadMe                          | -->
+<!-- | Robin   | Nov 12, 2026 | Add personal info to ReadMe                          | -->
+
+| Who     | Date         | What                                                        |
+|---------|--------------|-------------------------------------------------------------|
+| Robin   | Nov 14, 2026 | #2 Set the app theme colors and font in the theme files     |
+| Robin   | Nov 17, 2026 | #8 Build the My Plan screen showing the saved meal plan     |
+| Kyleigh | Nov 14, 2026 | #5 Build the Home screen layout with the four feature cards |
+| kyleigh | Nov 16, 2026 | #6 Make each Home card open its matching screen             |
+| Emilio  | Nov 14, 2026 | #3 Create an empty screen and wire Nav                      |
+| Emilio  | Nov 14, 2026 | #4 Create the bottom navigation bar                      |
+| Robin   | Nov 20, 2026 | #15 Create the data class for Store (name, address, state) |
+
+
 
 Hope you enjoy!
