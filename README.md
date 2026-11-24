@@ -30,12 +30,17 @@ Many students have limited kitchen access, limited transportation, and tight bud
 
 **Run it locally:**
 
-```bash
-git clone https://github.com/aedwardsxula/Food_Loop.git
-cd Food_Loop
-npm install
-npm run dev
-```
+Run it locally
+
+Install Android Studio if you don't have it, and open it once so it finishes downloading the Android SDK.
+On the Welcome screen, click Get from VCS (or in an open project: File > New > Project from Version Control).
+Paste the repo URL and click Clone:
+https://github.com/aedwardsxula/Food_Loop.git
+When the project opens, click Trust Project, then let Gradle sync finish (watch the progress bar at the bottom). If it asks to install missing SDK components, accept.
+Pick an emulator or plug in a phone with USB debugging on. To create an emulator: Device Manager > Create Device.
+Click the green Run button (or press Shift + F10).
+
+If you'd rather clone from the terminal, run git clone https://github.com/aedwardsxula/Food_Loop.git, then in Android Studio use File > Open and select the Food_Loop folder.
 
 ## Getting help
 
